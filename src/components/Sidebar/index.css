@@ -1,0 +1,8 @@
+.sidebar-container {
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+    background-color: #2b2f3e;
+    color: #fff;
+    padding: 30px;
+}

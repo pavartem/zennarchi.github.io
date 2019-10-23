@@ -1,0 +1,5 @@
+.comments-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 50vh;
+}

@@ -1,0 +1,12 @@
+.comment {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.comment:hover {
+    z-index: 1;
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
