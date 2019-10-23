@@ -3,15 +3,21 @@ import './index.css';
 import Comment from "../Comment";
 import WriteComment from "../WriteComment";
 
-const Comments = () => (
-    <div className='shadow p-3 mb-5 bg-white'>
-        <h1 className='font-weight-light'>Comments</h1>
+const Comments = ({selectedItem: {comments}, saveComment, changeInput, commentInput}) => (
+    <div className='shadow mb-5 bg-white'>
+        <h1 className='font-weight-light p-3'>Comments</h1>
         <div className="comments-list">
-            <Comment/>
-            <Comment/>
-            <Comment/>
+            {
+                comments &&
+                comments.map((comment) => <Comment key={comment.id} comment={comment}/>)
+            }
         </div>
-        <WriteComment/>
+
+        <WriteComment
+            saveComment={saveComment}
+            changeInput={changeInput}
+            commentInput={commentInput}
+        />
     </div>
 );
 
